@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="navigation">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="container">
+      <div class="intro">
+        <div class="intro-text">
+            <h1 class="name" id="typing-text">Hi! I am Anugya Vats.<br>Welcome to my Portfolio.</h1>
+        </div>
+        <div class="profile-pic">
+          <img src="Anugya.jpeg" alt="Your Picture">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p class="about">I am a mechanical engineer with a strong grasp of mechanical concepts. I also have knowledge of data structures, algorithms, machine learning, front-end development, and programming languages such as C++, C, and Python. I am an optimistic person and passionate about everything I do. I am a keen learner, always seeking new challenges and opportunities to grow.</p>
+      <h3>Education</h3>
+      <ul>
+        <li>Bachelor of Technology, IIT Jodhpur | 2021-2025</li>
+        <li>St. Xavier's High School, Nagpur | 2020</li>
+        <li>Delhi Public School, Nagpur | 2018</li>
+      </ul>
+      
+      <h3>Skills</h3>
+      <ul>
+        <li>Data structures and algorithms</li>
+        <li>Machine learning algorithms and frameworks</li>
+        <li>Front-end development (HTML, CSS, JavaScript)</li>
+        <li>Programming languages: C++, C, Python</li>
+        <li>ANSYS Mechanical</li>
+        <li>MATLAB</li>
+        <li>Problem-solving and critical thinking</li>
+        <li>Interpersonal Skills
+          <ul>
+            <li>Communication skills</li>
+            <li>Time Management</li>
+            <li>Leadership</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <h3>Movie Recommendation System</h3>
+          <a href="https://anugyavats-movie-recommendation-system-mrsapp-y747jx.streamlit.app/" target="_blank" rel="noopener noreferrer">Link to Website</a>
+          <p>Developed a movie recommendation system to suggest similar movies to your favorite movie. It identifies similarities among movies based on plot, genre, cast, and crew.</p>
+        </li>
+        <li>
+          <h3>Smart Dustbin</h3>
+          <p>Designed and developed an automated dustbin that incorporates a moisture sensor to efficiently segregate dry and wet waste.<br>
+             Additionally, the dustbin includes a buzzer that provides an alert when it reaches its maximum capacity.</p>
+        </li>
+        
+      </ul>
+    </div>
+  </section>
+  
+  <section id="links">
+    <div class="container">
+      <h2>Links</h2>
+      <ul>
+        <li>
+          <h3>Resume</h3>
+          <p><a href="https://drive.google.com/file/d/1B-FCz1jHhkMljmcEq4ebYENHwNSOW6Kq/view?usp=sharing" target="_blank">Resume</a></p>
+        </li>
+        <li>
+          <h3>Github</h3>
+          <p><a href="https://github.com/anugyavats" target="_blank">GitHub</a></p>
+        </li>
+        <li>
+          <h3>LinkedIn</h3>
+          <p><a href="https://www.linkedin.com/in/anugya-vats-358633224/" target="_blank">LinkedIn</a></p>
+        </li>
+        <li>
+            <h3>Email</h3>
+            <ul>
+                <li>anugyavats2002@gmail.com</li>
+                <li>vats.3@iitj.ac.in</li>
+            </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>Please feel free to reach out to me using the form below.</p>
+      <div class="contact-form">
+        <form action="https://formspree.io/f/xqkvzael" method="POST">
+          <div class="form-group">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="send-button">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
