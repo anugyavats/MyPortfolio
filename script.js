@@ -1,32 +1,32 @@
 
-const text = "Hi! I am Anugya Vats. Welcome to my Portfolio.";
-const typingDelay = 100; // Delay between each character typing
-const erasingDelay = 50; // Delay before erasing the text
-const newTextDelay = 2000; // Delay before typing the next text
-let charIndex = text.length; // Start with the last character
-let typingTimeout;
+// const text = "Hi! I am Anugya Vats. Welcome to my Portfolio.";
+// const typingDelay = 100; // Delay between each character typing
+// const erasingDelay = 50; // Delay before erasing the text
+// const newTextDelay = 2000; // Delay before typing the next text
+// let charIndex = text.length; // Start with the last character
+// let typingTimeout;
 
-function erase() {
-  if (charIndex > 0) {
-    document.getElementById("typing-text").textContent = text.substring(0, charIndex - 1);
-    charIndex--;
-    typingTimeout = setTimeout(erase, erasingDelay);
-  } else {
-    clearTimeout(typingTimeout);
-    setTimeout(type, newTextDelay);
-  }
-}
+// function erase() {
+//   if (charIndex > 0) {
+//     document.getElementById("typing-text").textContent = text.substring(0, charIndex - 1);
+//     charIndex--;
+//     typingTimeout = setTimeout(erase, erasingDelay);
+//   } else {
+//     clearTimeout(typingTimeout);
+//     setTimeout(type, newTextDelay);
+//   }
+// }
 
-function type() {
-  if (charIndex < text.length) {
-    document.getElementById("typing-text").textContent += text.charAt(charIndex);
-    charIndex++;
-    typingTimeout = setTimeout(type, typingDelay);
-  } else {
-    clearTimeout(typingTimeout);
-    setTimeout(erase, newTextDelay);
-  }
-}
+// function type() {
+//   if (charIndex < text.length) {
+//     document.getElementById("typing-text").textContent += text.charAt(charIndex);
+//     charIndex++;
+//     typingTimeout = setTimeout(type, typingDelay);
+//   } else {
+//     clearTimeout(typingTimeout);
+//     setTimeout(erase, newTextDelay);
+//   }
+// }
 
 document.addEventListener("DOMContentLoaded", function() {
   erase();
