@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="favicon/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,13 +15,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   <header>
     <nav>
       <ul class="navigation">
         <li class="icon"><img src="favicon/favicon-32x32.png" alt="icon"></li>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About Me</a></li>
-        <li><a href="#projects">Projects</a></li>
+        <li><a href="#projects">Education</a></li>
         <li><a href="#links">Links</a></li>
         <li><a href="#contact">Contact Me</a></li>
       </ul>
@@ -46,10 +48,45 @@
       <h2>About Me</h2>
       <p class="about">I am a mechanical engineer with a strong grasp of mechanical concepts.<br>
         I also have knowledge of data structures, algorithms, machine learning, front-end development, and programming languages such as C++, C, and Python.<br>
-        I am an optimistic person and passionate about everything I do. I am a keen learner, always seeking new challenges and opportunities to grow.</p>
+        I am an optimistic person and passionate about everything I do. I am a keen learner, always seeking new challenges and opportunities to grow.<br>
+        Apart from academics, I am also a part of the Dramatics Society in my college and served my tenure in the Entrepreneurship cell of my college.<br>
+        I love watching movies and watching web series. I also love traveling and trying different foods.
+      </p>
+
+      <div id="carouselExample" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/image1.jpg" class="d-block w-100" alt="Image 1">
+          </div>
+          <div class="carousel-item">
+            <img src="images/image2.jpg" class="d-block w-100" alt="Image 2">
+          </div>
+          <div class="carousel-item">
+            <img src="images/image3.jpg" class="d-block w-100" alt="Image 3">
+          </div>
+          <div class="carousel-item">
+            <img src="images/image4.jpg" class="d-block w-100" alt="Image 4">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <section id="projects">
+    <div class="container">
       <h3>Education</h3>
       <ul>
-        <li>Bachelor of Technology, IIT Jodhpur | 2021-2025</li>
+        <li>Bachelor of Technology, IIT Jodhpur | 2025 (Expected)</li>
         <li>St. Xavier's High School, Nagpur | 2020</li>
         <li>Delhi Public School, Nagpur | 2018</li>
       </ul>
@@ -71,16 +108,13 @@
           </ul>
         </li>
       </ul>
-    </div>
-  </section>
-  
-  <section id="projects">
-    <div class="container">
       <h2>Projects</h2>
       <ul>
         <li>
-          <h3>Movie Recommendation System</h3>
-          <a href="https://anugyavats-movie-recommendation-system-mrsapp-y747jx.streamlit.app/" target="_blank" rel="noopener noreferrer">Link to Website</a>
+          <h3>Movie Recommendation System <a href="https://anugyavats-movie-recommendation-system-mrsapp-y747jx.streamlit.app/" target="_blank">
+            <img src="images/website.jpg" alt="Website" class="website-icon">
+          </a>
+        </h3>
           <p>Developed a movie recommendation system to suggest similar movies to your favorite movie. It identifies similarities among movies based on plot, genre, cast, and crew.</p>
         </li>
         <li>
@@ -146,7 +180,11 @@
     </div>
   </section>
   
-  
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Anugya Vats. All rights reserved.</p>
+    </div>
+  </footer>  
 
   <script src="script.js"></script>
 </body>

@@ -64,4 +64,10 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", changeActiveLink);
     changeActiveLink();
   });
+
+  $(document).ready(function() {
+    $('#carouselExample').carousel({
+      interval: 2000 // Change the interval (in milliseconds) to control autoplay speed
+    });
+  });
   
